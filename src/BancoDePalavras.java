@@ -7,8 +7,8 @@ import java.util.Random;
 
 public class BancoDePalavras {
 	
-	String caminho = "C:\\Users\\Clarissa\\eclipse-workspace\\ProjetoFinal\\bancodepalavras.txt";
-	List<String> lista = new ArrayList<>();
+	private String caminho = "C:\\Users\\Clarissa\\eclipse-workspace\\ProjetoFinal\\bancodepalavras.txt";
+	private List<String> lista = new ArrayList<>();
 	
 	
 	public BancoDePalavras ( ) {

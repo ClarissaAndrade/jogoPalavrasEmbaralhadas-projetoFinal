@@ -11,8 +11,8 @@ public class Principal {
 	System.out.println(palavra);
 	
 	
-	
-	Embaralhador emb = new EmbaralhaDois();
+	FabricaEmbaralhadores fabrica = new FabricaEmbaralhadores();
+	Embaralhador emb = fabrica.retornaEmbaralhador(2);
 	String reversa = emb.embaralhar(palavra);
 	System.out.println(reversa);
 
