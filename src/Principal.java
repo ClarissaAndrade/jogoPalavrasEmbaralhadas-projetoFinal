@@ -18,16 +18,38 @@ public class Principal {
 	int level = sc.nextInt();
 	
 	MecanicaDoJogo mecanica = fabricamecanica.retornaMecanica(level);
-	
-	System.out.println("Qual é a seguinte palavra: ");
-	String palavra = teste.retornaPalavra();
 	Embaralhador emb = fabrica.retornaEmbaralhador(level);
-	String reversa = emb.embaralhar(palavra);
 	
+	/*System.out.println("Qual é a seguinte palavra: ");
+	String palavra = teste.retornaPalavra();
+	
+	String reversa = emb.embaralhar(palavra);
+	System.out.println(reversa);
+	sc.nextLine();
 	String resposta = sc.nextLine();
 	
-	mecanica.tentativa();
+	mecanica.tentativa(reversa, resposta);
+	mecanica.temVida(); */
+	boolean terminou = false;
+	sc.nextLine();
 	
+	while (terminou == false) {
+	
+		System.out.println("Qual é a seguinte palavra: ");
+		String palavra = teste.retornaPalavra();
+		String reversa = emb.embaralhar(palavra);
+		System.out.println(reversa);
+		
+		String resposta = sc.nextLine();
+		
+		String tentativas = mecanica.tentativa(palavra, resposta);
+		System.out.println(tentativas);
+		mecanica.temVida();
+		terminou = mecanica.terminou();		
+	}
+		
+	System.out.println("O Jogo acabou!");
+	System.out.println(mecanica.resultadoFinal());
 	
 	sc.close();
 
