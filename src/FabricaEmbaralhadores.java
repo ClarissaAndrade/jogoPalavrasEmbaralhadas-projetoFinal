@@ -11,11 +11,6 @@ public class FabricaEmbaralhadores {
 		}
 		else {
 			return new EmbaralhaDois();
-		}
-		
-		
-	}
-	
-	
-	
+		}				
+	}			
 }

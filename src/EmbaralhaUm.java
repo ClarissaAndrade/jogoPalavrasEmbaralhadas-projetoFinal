@@ -18,8 +18,8 @@ public class EmbaralhaUm implements Embaralhador{
 			 
 			    String reversa = new String(charArray);
 			    return reversa;
-			  }	
-	}
+	}	
+}
 	
 	
 	

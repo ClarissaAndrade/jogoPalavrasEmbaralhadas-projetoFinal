@@ -7,9 +7,9 @@ public interface MecanicaDoJogo {
 		
 	void temVida ();
 	
-	public boolean terminou();
+	boolean terminou();
 	
-	public String resultadoFinal ();
+	String resultadoFinal ();
 	
 	
 	

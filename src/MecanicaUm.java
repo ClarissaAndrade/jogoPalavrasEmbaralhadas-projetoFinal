@@ -7,14 +7,7 @@ public class MecanicaUm implements MecanicaDoJogo {
 	private int vida = 5;
 	private boolean vivo;
 	
-	public int getLevel() {
-		return level;
-	}
-
-	public void setLevel(int level) {
-		this.level = level;
-	}
-
+	@Override
 	public String tentativa (String palavra, String resposta) {	
 
 		if (palavra.equals(resposta)) {
@@ -28,7 +21,8 @@ public class MecanicaUm implements MecanicaDoJogo {
 			return "Errou!";
 		}
 	}
-		
+	
+	@Override	
 	public void temVida () {
 		
 		if (vida != 0) {
@@ -39,6 +33,7 @@ public class MecanicaUm implements MecanicaDoJogo {
 		}
 	}
 	
+	@Override
 	public boolean terminou() {
 		if (vivo == true) {
 			return false;
@@ -48,10 +43,8 @@ public class MecanicaUm implements MecanicaDoJogo {
 		}
 	}
 	
+	@Override
 	public String resultadoFinal () {
 		return "Total de pontos: " + pontuacao;
 	}
-	
-	
-
 }

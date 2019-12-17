@@ -10,13 +10,6 @@ public class FabricaMecanicaDoJogo {
 		}
 		else {
 			return new MecanicaDois();
-		}
-		
-		
-	}
-	
-	
-	
-	
-	
+		}		
+	}		
 }
